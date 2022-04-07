@@ -9,6 +9,7 @@ module.exports = {
           },
       upload: {
         target: 'temporary-public-storage',
+        outputDir: './lhci'
       },
     },
   };
