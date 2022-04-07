@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "serve:lhci": "NODE_ENV=npm run start"
+    "export": "next export"
   },
   "dependencies": {
     "next": "12.1.4",
