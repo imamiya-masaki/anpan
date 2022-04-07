@@ -18,6 +18,7 @@ jobs:
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         run: |
+          echo $LHCI_GITHUB_APP_TOKEN
           npm install
           npm install -g @lhci/cli@0.8.x
           lhci autorun --config=./lighthouserc.js
