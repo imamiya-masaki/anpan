@@ -1,4 +1,6 @@
 name: CI
+env: 
+
 on: [push]
 jobs:
   lhci:
@@ -19,3 +21,5 @@ jobs:
           npm install
           npm install -g @lhci/cli@0.8.x
           lhci autorun --config=./lighthouserc.js
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
