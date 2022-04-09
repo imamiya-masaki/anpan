@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -21,4 +22,4 @@ jobs:
           lhci autorun --config=./lighthouserc.js
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
-      - run: cat ./lhci/manifest.json
+      - run: ls
