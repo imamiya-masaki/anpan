@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   let b = null
   let c = ""
-  for (let i = 0; i < 50000000; i++) {
+  for (let i = 0; i < 15000000; i++) {
     if ( i % 2 == 0) {
       c = c + "d"
     }
