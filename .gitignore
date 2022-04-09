@@ -37,3 +37,6 @@ yarn-error.log*
 .lighthouseci
 
 .env
+
+lhci/localhost-*
+lhci/manifest.json
