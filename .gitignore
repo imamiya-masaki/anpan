@@ -33,3 +33,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+.lighthouseci
+
+.env
+
+lhci/localhost-*
+lhci/manifest.json
